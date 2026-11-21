@@ -1,0 +1,22 @@
+
+{
+  "id": "./",
+  "name": "Liga Los Pollitos 2v2 Basket",
+  "short_name": "Los Pollitos",
+  "description": "Aplicación para organizar partidos de baloncesto 2 contra 2",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#111827",
+  "theme_color": "#111827",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "iconos/icono.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+
+/* ==========================================
+   LIGA LOS POLLITOS - ADAPTACION MOVIL
+========================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    width: 100%;
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 600px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    /* Contenedor principal */
+    main {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        padding-top: 14px !important;
+        gap: 16px !important;
+    }
+
+    /* Tarjetas y secciones */
+    main section {
+        padding: 12px !        important;
+        border-radius: 14px;
+    }
+
+    /* Botones más cómodos para tocar */
+    button {
+        min-height: 42px;
+        touch-action: manipulation;
+    }
+
+    /* Campos de texto */
+    input,
+    select,
+    textarea {
+        font-size: 16px !important;
+        max-width: 100%;
+    }
+
+    /* Tablas */
+    table {
+        min-width: 550px;
+    }
+
+    /* Evitar que las tablas deformen la pantalla */
+    .overflow-x-auto {
+        max-width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Modales */
+    [role="dialog"] {
+        max-width: 100vw;
+    }
+
+    /* Notificaciones */
+    #toast {
+        right: 10px !important;
+        left: 10px !important;
+        bottom: 12px !important;
+    }
+
+
+
+}
+
+/* Ajustes para teléfonos muy pequeños */
+@media (max-width: 380px) {
+
+    h1 {
+        font-size: 1.25rem !important;
+    }
+
+    h2 {
+        font-size: 1.1rem !important;
+    }
+
+    button {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+}
+
+
+/* ==========================================
+   CABECERA MOVIL
+========================================== */
+
+@media (max-width: 600px) {
+
+    header > div {
+        height: 58px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        gap: 8px !important;
+    }
+
+    header h1 {
+        font-size: 15px !important;
+    }
+
+    header p {
+        font-size: 9px !important;
+    }
+
+    /* Botones de la cabecera */
+    header button {
+        padding: 8px !important;
+        min-height: 38px;
+    }
+
+    /* Evitar que el logo se agrande */
+    header button:first-child {
+        flex-shrink: 0;
+    }
+}
+
+/* ==========================================
+   CONTROLES Y BOTONES PARA MOVIL
+========================================== */
+
+@media (max-width: 600px) {
+
+    /* Botones de acción */
+    main button {
+        min-height: 42px;
+    }
+
+    /* Entrada de jugadores */
+    #player-input {
+        min-width: 0;
+        width: 100%;
+    }
+
+    /* Configuración de partidos */
+    main .grid {
+        gap: 10px !important;
+    }
+
+    /* Espaciado entre tarjetas */
+    main section {
+        margin-bottom: 12px;
+    }
+
+    /* Títulos de las secciones */
+    main h2 {
+        font-size: 15px !important;
+        line-height: 1.4;
+    }
+
+    /* Espacio para las tablas */
+    main table {
+        font-size: 11px;
+    }
+
+    /* Marcadores */
+    #matches-list {
+        width: 100%;
+    }
+}
+
